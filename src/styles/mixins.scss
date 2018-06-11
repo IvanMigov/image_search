@@ -1,0 +1,6 @@
+
+@mixin mq($point) {
+  @media (max-width: $point) { @content; }
+}
+
+

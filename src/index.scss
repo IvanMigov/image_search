@@ -1,0 +1,21 @@
+@import '~reset-css/reset.css';
+@import './styles/colors';
+
+html {
+  // This defines what 1rem is === 10px
+  font-size: 62.5%;
+  padding: 10px;
+  box-sizing: border-box
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  background: linear-gradient(to right, $purple , $blue);
+
+  & *{
+    box-sizing: border-box;
+  }
+}
+

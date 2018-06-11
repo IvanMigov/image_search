@@ -1,0 +1,64 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.search {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include mq(540px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title{
+    color: $white;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__input{
+    outline: none;
+    border: 0.1rem solid $white;
+    background-color: transparent;
+    color: $white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-right: 1.5rem;
+    flex-basis: 40rem;
+    font-size: 2rem;
+
+    &::placeholder {
+      color: $white;
+      opacity: 0.3;
+    }
+
+    @include mq(540px) {
+      flex-basis: 0;
+      width: 100%;
+      margin: 0 0 1.5rem;
+    }
+
+  }
+
+  &__button{
+    outline: none;
+    border-radius: 0.5rem;
+    border: 0.1rem solid $white;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    max-width: 10rem;
+    padding: 1rem;
+
+    &:hover{
+      background-color: $purple;
+    }
+  }
+}
+
+
